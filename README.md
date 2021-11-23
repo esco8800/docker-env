@@ -1,3 +1,3 @@
 # docker-env
 Для развертывания запустить:<br />
-make composer-install up
+``make composer-install up``
