@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  &composer-service composer:
+    image: composer/composer
+    container_name: ${COMPOSE_PROJECT_NAME}-composer-cli
+    volumes:
+      - ./../../src:/app:rw
+      - ~/.ssh:/root/.ssh/:ro
+    restart: on-failure
